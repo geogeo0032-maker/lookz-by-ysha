@@ -55,7 +55,7 @@
     /* Hero Section */
     .hero {
       height: 100vh;
-      background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?fit=crop&w=1920&q=80') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -98,7 +98,7 @@
 
     /* Services Section */
     .services {
-      background-color: #f5f0e6; /* light beige */
+      background-color: #f5f0e6;
       color: #111;
       text-align: center;
       padding: 80px 20px;
@@ -125,6 +125,12 @@
       width: 220px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.15);
       transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    .service-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
     .service-item:hover {
       transform: translateY(-5px);
@@ -198,22 +204,27 @@
     <h2>Our Services</h2>
     <div class="service-list">
       <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1588776814546-2b3f5263b1b0?fit=crop&w=400&q=80" alt="Pageant Makeup">
         <h3>Pageant Makeup</h3>
         <p>₱849</p>
       </div>
       <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1596727147576-037896bcabb0?fit=crop&w=400&q=80" alt="Photoshoot">
         <h3>Photoshoot</h3>
         <p>₱799</p>
       </div>
       <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1591047139829-1b2fa1c6b0a0?fit=crop&w=400&q=80" alt="Hair Styling">
         <h3>Hair Styling</h3>
         <p>₱150+ (depends on style)</p>
       </div>
       <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1606813905682-73c8fa786f8a?fit=crop&w=400&q=80" alt="Bridal Makeup">
         <h3>Bridal Makeup</h3>
         <p>₱999</p>
       </div>
       <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=400&q=80" alt="Dress Rental">
         <h3>Dress Rental</h3>
         <p>Contact for pricing</p>
       </div>
