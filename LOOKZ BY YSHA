@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOOKZ BY YSHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { 
+      font-family: 'Roboto', sans-serif; 
+      color: #fff; 
+      background-color: #111; 
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: rgba(34,34,34,0.95);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+    nav .logo { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 1.5rem; 
+      font-weight: 700; 
+      color: #fff;
+    }
+    nav ul { 
+      display: flex; 
+      list-style: none; 
+      gap: 30px; 
+    }
+    nav ul li a { 
+      font-weight: 500; 
+      padding-bottom: 2px; 
+      transition: all 0.3s;
+    }
+    nav ul li a.active,
+    nav ul li a:hover { 
+      font-weight: 700; 
+      border-bottom: 2px solid #fff; 
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .hero .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    .hero button {
+      padding: 15px 40px;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #fff; 
+      color: #111; 
+    }
+
+    /* Services Section */
+    .services {
+      background-color: #f5f0e6; /* light beige */
+      color: #111;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .services h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      border-bottom: 2px solid #111;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .service-item {
+      background: #fff;
+      color: #111;
+      padding: 25px 20px;
+      border-radius: 15px;
+      width: 220px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    }
+    .service-item h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .service-item p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    /* Content Section */
+    .content {
+      background-color: #1a1a1a;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1rem; }
+      nav { padding: 10px 20px; }
+      .service-item { width: 100%; max-width: 300px; }
+      .service-list { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">LOOKZ BY YSHA</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#looks">Looks</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="subtitle">LOOKZ BY YSHA</div>
+    <h1>Makeup Services</h1>
+    <p>Experience Ysha's makeup services for every occasion — from pageants to bridal looks.</p>
+    <button onclick="window.location.href='https://wa.me/YourNumberHere'">BOOK AN APPOINTMENT</button>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Pageant Makeup</h3>
+        <p>₱849</p>
+      </div>
+      <div class="service-item">
+        <h3>Photoshoot</h3>
+        <p>₱799</p>
+      </div>
+      <div class="service-item">
+        <h3>Hair Styling</h3>
+        <p>₱150+ (depends on style)</p>
+      </div>
+      <div class="service-item">
+        <h3>Bridal Makeup</h3>
+        <p>₱999</p>
+      </div>
+      <div class="service-item">
+        <h3>Dress Rental</h3>
+        <p>Contact for pricing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content" id="looks">
+    <h2>Our makeup services cater to every occasion, ensuring you feel confident and radiant.</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 LOOKZ BY YSHA. All Rights Reserved. | Contact: <a href="https://wa.me/YourNumberHere">WhatsApp</a></p>
+  </footer>
+
+</body>
+</html>
